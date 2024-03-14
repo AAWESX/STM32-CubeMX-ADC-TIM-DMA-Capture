@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"tim_capturepolarity\startup_stm32f103xe.o"
+"tim_capturepolarity\main.o"
+"tim_capturepolarity\gpio.o"
+"tim_capturepolarity\tim.o"
+"tim_capturepolarity\usart.o"
+"tim_capturepolarity\stm32f1xx_it.o"
+"tim_capturepolarity\stm32f1xx_hal_msp.o"
+"tim_capturepolarity\stm32f1xx_hal_gpio_ex.o"
+"tim_capturepolarity\stm32f1xx_hal_tim.o"
+"tim_capturepolarity\stm32f1xx_hal_tim_ex.o"
+"tim_capturepolarity\stm32f1xx_hal.o"
+"tim_capturepolarity\stm32f1xx_hal_rcc.o"
+"tim_capturepolarity\stm32f1xx_hal_rcc_ex.o"
+"tim_capturepolarity\stm32f1xx_hal_gpio.o"
+"tim_capturepolarity\stm32f1xx_hal_dma.o"
+"tim_capturepolarity\stm32f1xx_hal_cortex.o"
+"tim_capturepolarity\stm32f1xx_hal_pwr.o"
+"tim_capturepolarity\stm32f1xx_hal_flash.o"
+"tim_capturepolarity\stm32f1xx_hal_flash_ex.o"
+"tim_capturepolarity\stm32f1xx_hal_exti.o"
+"tim_capturepolarity\stm32f1xx_hal_uart.o"
+"tim_capturepolarity\system_stm32f1xx.o"
+--strict --scatter "TIM_CAPTUREPOLARITY\TIM_CAPTUREPOLARITY.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TIM_CAPTUREPOLARITY.map" -o TIM_CAPTUREPOLARITY\TIM_CAPTUREPOLARITY.axf
